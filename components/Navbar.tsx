@@ -48,8 +48,8 @@ const Navbar: React.FC = () => {
             onClick={scrollToTop}
           >
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-primary/30">U</div>
-              <span className="font-bold text-xl tracking-tight">uxstudio</span>
+              <img src="/ScalingWebs.svg" alt="ScalingWebs" className="w-8 h-8" />
+              <span className="font-bold text-xl tracking-tight">ScalingWebs</span>
             </div>
           </div>
           

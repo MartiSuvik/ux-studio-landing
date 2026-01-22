@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { cn } from "../lib/utils";
-import { Palette, Mail, MessageCircle } from "lucide-react";
+import { Palette, Mail, MessageCircle, User } from "lucide-react";
 import { useAnimate } from "framer-motion";
 
 import { Button, buttonVariants } from "./ui/button";
@@ -64,7 +64,7 @@ const FeatureHighlight: React.FC = () => {
                     className="relative mx-auto h-[270px] w-[300px] md:h-[270px] md:w-[300px]"
                     ref={scope}
                   >
-                    <Palette className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 text-gray-400" />
+                    <User className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 text-gray-400" />
                     <div
                       id="next-js"
                       className="absolute bottom-12 left-14 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
@@ -121,7 +121,7 @@ const FeatureHighlight: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mb-6 mt-4 text-slate-500 text-center md:text-left text-sm leading-relaxed">
-                      If you don't like the website we've designed for you. Or if you change your mind. Or if you get eaten by a shark - then you don't pay anything.
+                      If you don't like the website we've designed for you. Or if you change your mind. Then you don't pay anything.
                       <br /><br />
                       <span className="font-semibold text-gray-900">Seriously, you got nothing to lose.</span>
                     </p>
@@ -132,7 +132,7 @@ const FeatureHighlight: React.FC = () => {
                         <Button>Book a call</Button>
                       </a>
                       <a
-                        href="mailto:contact@uxstudio.com"
+                        href="mailto:info@scalingwebs.com"
                         className={cn(
                           buttonVariants({
                             variant: "outline",
@@ -142,22 +142,6 @@ const FeatureHighlight: React.FC = () => {
                       >
                         <span className="flex items-center gap-1">
                           <Mail strokeWidth={1} className="h-5 w-5" />
-                        </span>
-                      </a>
-                      <a
-                        href="#"
-                        className={cn(
-                          buttonVariants({
-                            variant: "outline",
-                            size: "icon",
-                          }),
-                        )}
-                      >
-                        <span className="flex items-center gap-1">
-                          <MessageCircle
-                            strokeWidth={1}
-                            className="h-4 w-4"
-                          />
                         </span>
                       </a>
                     </div>

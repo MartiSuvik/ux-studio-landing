@@ -6,29 +6,29 @@ import { Button } from './ui/button';
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851636/hhetrggfgjgddbkmn4of.png",
-    category: "Dashboard"
+    category: "E-commerce"
   },
   {
-    title: "Medical Assistant",
+    title: "",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/auvtt8xvfp30ay5gke5a.png",
-    category: "Healthcare"
+    category: "Services Website"
   },
   {
-    title: "E-commerce Platform",
+    title: "",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/ff0jfoon1fktshpbpg6b.png",
     category: "E-commerce"
   },
   {
-    title: "Smart Home App",
+    title: "",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/mzaushzvklxgu2mwcyhm.png",
-    category: "Mobile App"
+    category: "Services Website"
   },
   {
-    title: "Design System",
+    title: "",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/uunegcy2b9ifgk2nbsr8.png",
-    category: "Design System"
+    category: "Informational Website"
   }
 ];
 
@@ -36,17 +36,17 @@ const reviews = [
   {
     name: "Rüki Gallery (rukigalerii.ee)",
     text: "We ran a keyword analysis, created SEO content, and optimized the site, resulting in 2x organic traffic growth within a year, with 76% of total traffic coming from SEO. The site now ranks in Google TOP5 for key art-related keywords and gets 64% more clicks from search results.",
-    initial: "R"
+    logo: "https://media.voog.com/0000/0045/0492/photos/Asset%201%402x-100.jpg"
   },
   {
     name: "Premium Watches (premiumkellad.ee)",
     text: "We built a structured SEO strategy for the e-commerce site (categories, content, and technical SEO) and increased SEO-driven revenue by 3.4x. Today, around 60% of traffic and 55% of sales come from organic search.",
-    initial: "P"
+    logo: "https://www.premiumkellad.ee/cdn/shop/files/Logo.jpg?v=1613688760&width=280"
   },
   {
     name: "Tark Pere (tarkpere.ee)",
     text: "With a new brand, website, and SEO setup, we grew organic traffic by 2.8x, with roughly 85% of all traffic coming from search. Even 1.5 years after a one-time SEO project, the site still generates 300+ Google visits per month and ranks in the TOP5 for core keywords such as couples therapy and family counseling in Tallinn.",
-    initial: "T"
+    logo: "https://tarkpere.ee/wp-content/uploads/2021/07/LogoTarkPereVector.svg"
   }
 ];
 
@@ -54,7 +54,7 @@ const FeaturedWork: React.FC = () => {
   const slides = projects.map((project, index) => (
     <div
       key={index}
-      className="relative h-80 md:h-[400px] w-full overflow-hidden rounded-2xl bg-gray-100 group border border-border"
+      className="relative h-80 md:h-[400px] w-full overflow-hidden rounded-2xl group border border-border"
     >
       <img
         src={project.image}
@@ -62,7 +62,7 @@ const FeaturedWork: React.FC = () => {
         className="object-cover h-full w-full transition-transform duration-700 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-        <span className="text-primary text-xs font-bold uppercase tracking-wider mb-2">{project.category}</span>
+        <span className="text-white text-xs font-bold uppercase tracking-wider mb-2">{project.category}</span>
         <h3 className="text-white text-xl font-bold">{project.title}</h3>
       </div>
     </div>
@@ -84,7 +84,7 @@ const FeaturedWork: React.FC = () => {
            >
               <h2 className="text-4xl font-bold mb-4">Some of our previous work</h2>
               <p className="text-gray-500 max-w-xl mx-auto">
-                With over 1000 finished projects we've built websites for every industry. See some examples in the video below.
+                With over 1000 finished projects we've built websites for every industry.
               </p>
            </motion.div>
         </div>
@@ -118,8 +118,8 @@ const FeaturedWork: React.FC = () => {
               >
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                      {review.initial}
+                    <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center overflow-hidden">
+                      <img src={review.logo} alt={review.name} className="w-full h-full object-contain p-1" />
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">{review.name}</h4>

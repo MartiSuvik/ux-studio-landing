@@ -80,21 +80,22 @@ const HelpSection: React.FC = () => {
             </div>
             
             <div className="bg-white text-gray-900 p-6 md:p-8 rounded-2xl">
-               <div className="space-y-4">
+               <form name="process-design-request" method="POST" data-netlify="true" className="space-y-4">
+                <input type="hidden" name="subject" value="New lead from %{formName} (%{submissionId})" />
                 <div>
                   <label htmlFor="process-email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input type="email" id="process-email" placeholder="Your e-mail" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+                  <input type="email" id="process-email" name="email" placeholder="Your e-mail" required className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
                 </div>
                 <div>
                   <label htmlFor="process-phone" className="block text-sm font-medium text-gray-700 mb-1">Phone number</label>
-                  <input type="tel" id="process-phone" placeholder="Your phone number" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+                  <input type="tel" id="process-phone" name="phone" placeholder="Your phone number" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
                 </div>
                 <div>
                   <label htmlFor="process-website" className="block text-sm font-medium text-gray-700 mb-1">Website</label>
-                  <input type="url" id="process-website" placeholder="yourwebsite.com" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+                  <input type="url" id="process-website" name="website" placeholder="yourwebsite.com" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
                 </div>
                 
-                <Button className="w-full h-12 text-base font-semibold">
+                <Button type="submit" className="w-full h-12 text-base font-semibold">
                   See new design
                 </Button>
 
@@ -102,7 +103,7 @@ const HelpSection: React.FC = () => {
                    <CreditCard className="w-4 h-4" />
                    No Credit Card Required – See The New Design For Free!
                 </div>
-               </div>
+               </form>
             </div>
           </div>
           
