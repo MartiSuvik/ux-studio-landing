@@ -143,7 +143,7 @@ const Hero: React.FC = () => {
                     </div>
                   </div>
                   
-                  <Button type="submit" disabled={isSubmitting} className="w-full h-12 text-base font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                  <Button type="submit" disabled={isSubmitting} className="w-full h-12 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
                     {isSubmitting ? (
                       <>
                         <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"/>

@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #3B82F6;
+  --color-primary-foreground: #FFFFFF;
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #111827;
+  --color-surface-light: #F9FAFB;
+  --color-surface-dark: #1F2937;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #f8fafc;
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #0f172a;
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
+  --color-input: #e2e8f0;
+  --color-ring: #3B82F6;
+  --color-background: #FFFFFF;
+  --color-foreground: #111827;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #111827;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #111827;
+  --color-muted: #F3F4F6;
+  --color-muted-foreground: #6B7280;
+  --color-border: #E5E7EB;
+
+  --font-sans: "Inter", "sans-serif";
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --animate-autoplay-progress: autoplay-progress 1s linear infinite;
+
+  @keyframes autoplay-progress {
+    0% { transform: translate3d(-100%, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+}
+
 @layer base {
   body {
     font-family: 'Inter', sans-serif;
