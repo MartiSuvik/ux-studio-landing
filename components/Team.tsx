@@ -7,13 +7,13 @@ const Team: React.FC = () => {
     {
       name: 'Romet',
       role: 'Co-Founder',
-      image: 'public/romet.png',
+      image: '/romet.png',
       linkedin: 'https://www.linkedin.com/in/romet-ridamae/'
     },
     {
       name: 'Marti',
       role: 'Co-Founder',
-      image: 'public/marti.png',
+      image: '/marti.png',
       linkedin: 'https://www.linkedin.com/in/marti-suvorov-12aa0628b/'
     }
   ];
