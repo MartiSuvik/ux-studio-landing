@@ -82,9 +82,9 @@ const FeaturedWork: React.FC = () => {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
            >
-              <h2 className="text-4xl font-bold mb-4">Some of our previous work</h2>
+              <h2 className="text-4xl font-bold mb-4">Smarter Websites</h2>
               <p className="text-gray-500 max-w-xl mx-auto">
-                With over 1000 finished projects we've built websites for every industry.
+                We design and optimize websites built to rank, convert, and scale.
               </p>
            </motion.div>
         </div>
@@ -103,7 +103,7 @@ const FeaturedWork: React.FC = () => {
             <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-primary text-sm font-semibold mb-4">
               Case Studies
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Wanna Do Some Due Diligence?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Real Results</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

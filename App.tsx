@@ -5,6 +5,7 @@ import Logos from './components/Logos';
 import FeatureHighlight from './components/FeatureHighlight';
 import FeaturedWork from './components/FeaturedWork';
 import HelpSection from './components/HelpSection';
+import Team from './components/Team';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <FeatureHighlight />
         <FeaturedWork />
         <HelpSection />
+        <Team />
       </main>
       <Footer />
     </div>

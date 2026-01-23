@@ -117,6 +117,21 @@
 <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-background-light text-gray-900 antialiased selection:bg-primary/20 selection:text-primary">
+    <!-- Hidden forms for Netlify detection -->
+    <form name="hero-design-request" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="hero-design-request" />
+      <input type="hidden" name="subject" />
+      <input type="email" name="email" />
+      <input type="text" name="website" />
+    </form>
+    <form name="process-design-request" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="process-design-request" />
+      <input type="hidden" name="subject" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="website" />
+    </form>
+    
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

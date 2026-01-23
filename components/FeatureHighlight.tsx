@@ -116,33 +116,20 @@ const FeatureHighlight: React.FC = () => {
                     <div className="flex flex-col items-center md:items-start">
                       <h3 className="mt-6 pb-1 font-bold ">
                         <span className="text-2xl md:text-3xl text-center md:text-left leading-tight block">
-                          No Strings Attached. No Seriously, 0% Risk
+                          Built to Rank, Convert, and Scale
                         </span>
                       </h3>
                     </div>
                     <p className="mb-6 mt-4 text-slate-500 text-center md:text-left text-sm leading-relaxed">
-                      If you don't like the website we've designed for you. Or if you change your mind. Then you don't pay anything.
+                      Preview a free website concept or see exactly how your current site is underperforming.
                       <br /><br />
-                      <span className="font-semibold text-gray-900">Seriously, you got nothing to lose.</span>
+                      <span className="font-semibold text-gray-900">100% Free. No Strings Attached.</span>
                     </p>
                     <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                       <a
-                        href="#"
+                        href="#get-free-design"
                       >
-                        <Button>Book a call</Button>
-                      </a>
-                      <a
-                        href="mailto:info@scalingwebs.com"
-                        className={cn(
-                          buttonVariants({
-                            variant: "outline",
-                            size: "icon",
-                          }),
-                        )}
-                      >
-                        <span className="flex items-center gap-1">
-                          <Mail strokeWidth={1} className="h-5 w-5" />
-                        </span>
+                        <Button>Start Risk Free</Button>
                       </a>
                     </div>
                   </div>

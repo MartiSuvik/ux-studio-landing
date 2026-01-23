@@ -64,10 +64,10 @@ const Navbar: React.FC = () => {
               onClick={() => scrollToSection('services')} 
               className="text-sm font-medium hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
             >
-              Services
+              How we work?
             </button>
             <button 
-              onClick={() => scrollToSection('about')} 
+              onClick={() => scrollToSection('team')} 
               className="text-sm font-medium hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
             >
               About
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('get-free-design')}
               className="hidden sm:inline-flex items-center justify-center px-5 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-black hover:bg-gray-800 transition-all group shadow-md hover:shadow-lg"
             >
               Contact
@@ -106,8 +106,8 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <button onClick={() => scrollToSection('works')} className="text-base font-medium text-gray-900 py-2 text-left w-full">Works</button>
             <button onClick={() => scrollToSection('services')} className="text-base font-medium text-gray-900 py-2 text-left w-full">Services</button>
-            <button onClick={() => scrollToSection('about')} className="text-base font-medium text-gray-900 py-2 text-left w-full">About</button>
-            <button onClick={() => scrollToSection('contact')} className="inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white bg-black hover:bg-gray-800">
+            <button onClick={() => scrollToSection('team')} className="text-base font-medium text-gray-900 py-2 text-left w-full">About</button>
+            <button onClick={() => scrollToSection('get-free-design')} className="inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white bg-black hover:bg-gray-800">
               Contact Us
             </button>
           </div>
