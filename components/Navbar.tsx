@@ -54,12 +54,12 @@ const Navbar: React.FC = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8 items-center">
-            <button 
-              onClick={() => scrollToSection('works')} 
-              className="text-sm font-medium hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
+            <a 
+              href="/portfolio" 
+              className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
             >
               Works
-            </button>
+            </a>
             <button 
               onClick={() => scrollToSection('services')} 
               className="text-sm font-medium hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
           className="md:hidden bg-white border-b border-gray-100 px-4 py-4 shadow-lg"
         >
           <div className="flex flex-col space-y-4">
-            <button onClick={() => scrollToSection('works')} className="text-base font-medium text-gray-900 py-2 text-left w-full">Works</button>
+            <a href="/portfolio" className="text-base font-medium text-gray-900 py-2 text-left w-full">Works</a>
             <button onClick={() => scrollToSection('services')} className="text-base font-medium text-gray-900 py-2 text-left w-full">Services</button>
             <button onClick={() => scrollToSection('team')} className="text-base font-medium text-gray-900 py-2 text-left w-full">About</button>
             <button onClick={() => scrollToSection('get-free-design')} className="inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white bg-black hover:bg-gray-800">
