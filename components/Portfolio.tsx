@@ -51,12 +51,6 @@ const portfolioItems = [
     url: 'https://hotelspasupply.com/en',
   },
   {
-    name: 'Simplified Wholesale',
-    feedback: 'Custom website with ordering functionality',
-    mainImage: 'https://res.cloudinary.com/dl4bzhitw/image/upload/c_fill,w_800,h_1200,g_north/v1770637660/8_mx4qbw.png',
-    url: 'https://scalisiproduce.com',
-  },
-  {
     name: 'Marketing Site',
     feedback: 'Marketing website with lead generation features',
     mainImage: 'https://res.cloudinary.com/dl4bzhitw/image/upload/c_fill,w_800,h_900,g_north/v1770637663/9_jfurqt.png',
