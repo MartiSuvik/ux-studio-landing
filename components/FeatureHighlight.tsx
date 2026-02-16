@@ -112,13 +112,13 @@ const FeatureHighlight: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="-mt-16 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-10 md:w-[400px]">
+                    <div className="-mt-16 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-10 md:w-[400px]">
                     <div className="flex flex-col items-center md:items-start">
-                      <h3 className="mt-6 pb-1 font-bold ">
+                      <h2 className="mt-6 pb-1 font-bold ">
                         <span className="text-2xl md:text-3xl text-center md:text-left leading-tight block">
                           Built to Rank, Convert, and Scale
                         </span>
-                      </h3>
+                      </h2>
                     </div>
                     <p className="mb-6 mt-4 text-slate-500 text-center md:text-left text-sm leading-relaxed">
                       Preview a free website concept or see exactly how your current site is underperforming.

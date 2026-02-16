@@ -1,0 +1,42 @@
+# ScalingWebs
+
+> ScalingWebs is a web design and SEO agency based in Tallinn, Estonia, serving businesses across the Baltic region (Estonia, Latvia, Lithuania). We specialize in building high-performance websites optimized for search engine visibility and conversion.
+
+## Legal Entity
+
+- Company: EFFI AI SOLUTIONS OÜ
+- Registry Code: 17306855
+- Address: Pärnu mnt 15, 10141 Tallinn, Estonia
+- Registry: https://www.inforegister.ee/en/17306855-EFFI-AI-SOLUTIONS-OU/
+
+## Core Services
+
+- **Free Website Design Preview**: We design a custom homepage for your business at no cost. You only pay if you want to proceed.
+- **SEO Optimization**: Keyword analysis, content creation, technical SEO, and on-page optimization to grow organic traffic.
+- **Website Redesign**: Full website rebuilds with modern design, fast load times, and conversion-optimized layouts.
+- **E-commerce Development**: Online store setup with SEO-first architecture for maximum product visibility.
+
+## Founders
+
+- **Romet Ridamäe** — Co-Founder | https://www.linkedin.com/in/romet-ridamae/
+- **Marti Suvorov** — Co-Founder | https://www.linkedin.com/in/marti-suvorov-12aa0628b/
+
+## Case Studies (Proven Results)
+
+- **Rüki Gallery (rukigalerii.ee)**: 2x organic traffic growth within one year. 76% of total traffic from SEO. Google TOP 5 for key art-related keywords. 64% more clicks from search results.
+- **Premium Watches (premiumkellad.ee)**: 3.4x increase in SEO-driven revenue. 60% of traffic and 55% of sales from organic search.
+- **Tark Pere (tarkpere.ee)**: 2.8x organic traffic growth. 85% of all traffic from search. 300+ monthly Google visits 1.5 years after a one-time SEO project. TOP 5 for "couples therapy" and "family counseling" in Tallinn.
+
+## Target Market
+
+Baltic businesses (Estonia, Latvia, Lithuania) seeking professional web design and SEO services. Primary language: English. Service area: Tallinn, Riga, Vilnius, and surrounding regions.
+
+## Technology Partners
+
+Make, Mixpanel, Netlify, SendGrid, Stripe, Supabase, Vercel, Zoom
+
+## Links
+
+- Website: https://scalingwebs.com
+- Portfolio: https://scalingwebs.com/portfolio
+- Estonian Business Registry: https://www.inforegister.ee/en/17306855-EFFI-AI-SOLUTIONS-OU/

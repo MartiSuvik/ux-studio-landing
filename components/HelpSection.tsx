@@ -64,7 +64,7 @@ const HelpSection: React.FC = () => {
             <div className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6">
               <Clock className="text-primary w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold mb-3 text-gray-900">Sumbit a form</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-900">Submit a Form</h3>
             <p className="text-gray-600 leading-relaxed">
               and we'll send you a time to see your brand new design of the website for free
             </p>

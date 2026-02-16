@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const menuItemVariants = {
   closed: { opacity: 0, y: 20, scale: 0.9 },
@@ -30,6 +31,8 @@ const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 20);
@@ -37,6 +40,14 @@ const Navbar: React.FC = () => {
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
+    
+    // If not on home page, navigate to home first with hash
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`);
+      return;
+    }
+    
+    // Already on home page, just scroll
     const element = document.getElementById(id);
     if (element) {
       const headerOffset = 80;
@@ -50,9 +61,34 @@ const Navbar: React.FC = () => {
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const goToHome = () => {
+    setMobileMenuOpen(false);
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
   };
+
+  // Handle hash navigation on mount/route change
+  React.useEffect(() => {
+    if (location.hash && location.pathname === '/') {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const headerOffset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 100); // Small delay to ensure page is fully loaded
+    }
+  }, [location]);
 
   return (
     <>
@@ -86,7 +122,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center">
             <div 
               className="flex-shrink-0 flex items-center cursor-pointer"
-              onClick={scrollToTop}
+              onClick={goToHome}
             >
               <div className="flex items-center gap-2">
                 <img src="/ScalingWebs.svg" alt="ScalingWebs" className="w-8 h-8" />

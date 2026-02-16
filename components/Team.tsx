@@ -43,8 +43,9 @@ const Team: React.FC = () => {
               <div className="w-32 h-32 overflow-hidden flex-shrink-0">
                 <img 
                   src={member.image} 
-                  alt={member.name}
+                  alt={`${member.name} - ${member.role} at ScalingWebs, Tallinn Estonia`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';

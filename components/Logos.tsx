@@ -69,7 +69,7 @@ const Logos = ({
     <section className="py-20 bg-surface-light border-t border-b border-gray-100 overflow-hidden">
       <div className="container mx-auto flex flex-col items-center text-center px-4">
         <h2 className="text-3xl font-bold text-gray-900 mb-12">
-          {heading}
+          Which Technology Partners Does ScalingWebs Use?
         </h2>
       </div>
       <div className="pt-4">
@@ -88,8 +88,9 @@ const Logos = ({
                   <div className="mx-4 flex shrink-0 items-center justify-center gap-3 group cursor-default">
                     <img 
                       src={logo.imagePath} 
-                      alt={logo.description}
+                      alt={`${logo.description} - ScalingWebs technology partner`}
                       className="h-8 w-auto grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                      loading="lazy"
                     />
                   </div>
                 </CarouselItem>

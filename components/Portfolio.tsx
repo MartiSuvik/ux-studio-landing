@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MasonryGrid } from './ui/image-testimonial-grid';
 import { PortfolioHero } from './ui/hero-dithering-card';
 import Navbar from './Navbar';
@@ -116,6 +117,14 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background-light text-gray-900 font-sans">
+      <Helmet>
+        <title>Portfolio - ScalingWebs | Web Design & SEO Projects for Baltic Businesses</title>
+        <meta name="description" content="Browse our portfolio of web design and SEO projects for Estonian and Baltic businesses. E-commerce, corporate websites, landing pages, and marketing sites built to rank, convert, and scale." />
+        <meta property="og:title" content="Portfolio - ScalingWebs | Web Design & SEO Projects" />
+        <meta property="og:description" content="Browse our portfolio of web design and SEO projects for Estonian and Baltic businesses." />
+        <meta property="og:url" content="https://scalingwebs.com/portfolio" />
+        <link rel="canonical" href="https://scalingwebs.com/portfolio" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

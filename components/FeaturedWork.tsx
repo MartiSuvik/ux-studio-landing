@@ -6,27 +6,27 @@ import { Button } from './ui/button';
 
 const projects = [
   {
-    title: "",
+    title: "Biolife.ee — Health & Wellness E-commerce",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851636/hhetrggfgjgddbkmn4of.png",
     category: "E-commerce"
   },
   {
-    title: "",
+    title: "DND Design Center — Interior Design Services",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/auvtt8xvfp30ay5gke5a.png",
     category: "Services Website"
   },
   {
-    title: "",
+    title: "Kodumaa KV — Estonian Real Estate Platform",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/ff0jfoon1fktshpbpg6b.png",
     category: "E-commerce"
   },
   {
-    title: "",
+    title: "Serena Käsitöö — Estonian Handcraft Shop",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/mzaushzvklxgu2mwcyhm.png",
     category: "Services Website"
   },
   {
-    title: "",
+    title: "Kundalini Kakao — Ceremonial Cacao E-commerce",
     image: "https://res.cloudinary.com/effichat/image/upload/v1768851637/uunegcy2b9ifgk2nbsr8.png",
     category: "Informational Website"
   }
@@ -82,9 +82,9 @@ const FeaturedWork: React.FC = () => {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
            >
-              <h2 className="text-4xl font-bold mb-4">Smarter Websites</h2>
+              <h2 className="text-4xl font-bold mb-4">What Does a ScalingWebs Website Look Like?</h2>
               <p className="text-gray-500 max-w-xl mx-auto">
-                We design and optimize websites built to rank, convert, and scale.
+                We design and optimize custom websites for Baltic businesses — built to rank in Google, convert visitors, and scale with your growth.
               </p>
            </motion.div>
         </div>
@@ -108,32 +108,35 @@ const FeaturedWork: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {reviews.map((review, i) => (
-              <motion.div 
+              <article
                 key={i}
                 className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
               >
-                <div className="flex justify-between items-start mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center overflow-hidden">
-                      <img src={review.logo} alt={review.name} className="w-full h-full object-contain p-1" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900">{review.name}</h4>
-                      <div className="flex text-yellow-400">
-                        {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 fill-current" />)}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center overflow-hidden">
+                        <img src={review.logo} alt={`${review.name} logo`} className="w-full h-full object-contain p-1" loading="lazy" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">{review.name}</h4>
+                        <div className="flex text-yellow-400">
+                          {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 fill-current" />)}
+                        </div>
                       </div>
                     </div>
+                    <Quote className="text-gray-200 w-6 h-6" />
                   </div>
-                  <Quote className="text-gray-200 w-6 h-6" />
-                </div>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  "{review.text}"
-                </p>
-              </motion.div>
+                  <blockquote className="text-gray-600 leading-relaxed text-sm">
+                    <p>"{review.text}"</p>
+                  </blockquote>
+                </motion.div>
+              </article>
             ))}
           </div>
         </div>

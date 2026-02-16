@@ -73,6 +73,7 @@ const Hero: React.FC = () => {
                 loop 
                 muted 
                 playsInline
+                poster="https://res.cloudinary.com/effichat/video/upload/so_0/v1769102816/fpnveyma3xft7a4yupoh.jpg"
                 className="w-full h-auto"
               >
                 <source src="https://res.cloudinary.com/effichat/video/upload/v1769102816/fpnveyma3xft7a4yupoh.mp4" type="video/mp4" />
