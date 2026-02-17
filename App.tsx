@@ -10,6 +10,7 @@ import HelpSection from './components/HelpSection';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
+import Blog from './components/Blog';
 import SchemaOrg from './components/SchemaOrg';
 
 const HomePage: React.FC = () => (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   );
 };

@@ -137,6 +137,12 @@ const Navbar: React.FC = () => {
               >
                 Works
               </a>
+              <a 
+                href="/blog" 
+                className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
+              >
+                Blog
+              </a>
               <button 
                 onClick={() => scrollToSection('services')} 
                 className="text-sm font-medium hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
@@ -207,6 +213,7 @@ const Navbar: React.FC = () => {
               <div className="flex flex-col space-y-2 py-4">
                 {[
                   { label: "Works", action: () => {}, href: "/portfolio", isLink: true },
+                  { label: "Blog", action: () => {}, href: "/blog", isLink: true },
                   { label: "Services", action: () => scrollToSection('services'), isLink: false },
                   { label: "About", action: () => scrollToSection('team'), isLink: false },
                 ].map((item, i) => (
